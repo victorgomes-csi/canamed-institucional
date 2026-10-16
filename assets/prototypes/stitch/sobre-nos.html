@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sobre Nós — Cana Med | Gestão em Saúde</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind CSS Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline-variant": "#bdc9c8",
+            "surface": "#f9f9ff",
+            "on-secondary-fixed-variant": "#004f58",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#dde2f3",
+            "on-primary-fixed-variant": "#004f4f",
+            "surface-tint": "#006a6a",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#ecf0ff",
+            "border-subtle": "#E2E8F0",
+            "mint-subtle": "#E6FFFA",
+            "secondary": "#156873",
+            "outline": "#6e7979",
+            "surface-subtle": "#F0F4F4",
+            "secondary-container": "#a4ebf8",
+            "on-surface-variant": "#3e4949",
+            "inverse-primary": "#76d6d5",
+            "on-primary-container": "#e3fffe",
+            "primary-container": "#008080",
+            "tertiary-fixed": "#8ff6d1",
+            "surface-dim": "#d4daea",
+            "tertiary-container": "#008264",
+            "background": "#f9f9ff",
+            "surface-container-low": "#f1f3ff",
+            "on-secondary": "#ffffff",
+            "surface-card": "#FFFFFF",
+            "on-background": "#161c27",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#00664e",
+            "error-container": "#ffdad6",
+            "surface-container": "#e8eeff",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#8bd2de",
+            "surface-container-high": "#e3e8f9",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#00513d",
+            "on-tertiary-fixed": "#002117",
+            "text-muted": "#718096",
+            "on-secondary-fixed": "#001f24",
+            "tertiary-fixed-dim": "#72d9b6",
+            "graphite-text": "#333333",
+            "primary-fixed-dim": "#76d6d5",
+            "on-surface": "#161c27",
+            "surface-canvas": "#F8FAFA",
+            "inverse-surface": "#2a303d",
+            "border-muted": "#CBD5E1",
+            "surface-container-highest": "#dde2f3",
+            "primary": "#006565",
+            "on-tertiary-container": "#e4fff2",
+            "surface-bright": "#f9f9ff",
+            "primary-fixed": "#93f2f2",
+            "on-secondary-container": "#1c6c77",
+            "secondary-fixed": "#a7eefb",
+            "error": "#ba1a1a",
+            "on-primary-fixed": "#002020"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin": "1rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.25rem",
+            "margin-tablet": "2rem",
+            "margin-desktop": "3rem",
+            "gutter-desktop": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "caption": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg": [
+              "32px",
+              { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }
+            ],
+            "headline-md": [
+              "24px",
+              { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }
+            ],
+            "display-hero-mobile": [
+              "32px",
+              { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }
+            ],
+            "display-hero": [
+              "48px",
+              { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700" }
+            ],
+            "body-md": [
+              "14px",
+              { "lineHeight": "22px", "fontWeight": "400" }
+            ],
+            "body-lg": [
+              "16px",
+              { "lineHeight": "26px", "fontWeight": "400" }
+            ],
+            "body-sm": [
+              "13px",
+              { "lineHeight": "20px", "fontWeight": "400" }
+            ],
+            "label-sm": [
+              "12px",
+              { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }
+            ],
+            "title-md": [
+              "16px",
+              { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }
+            ],
+            "headline-sm": [
+              "18px",
+              { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }
+            ],
+            "label-md": [
+              "14px",
+              { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }
+            ],
+            "caption": [
+              "11px",
+              { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }
+            ],
+            "headline-lg-mobile": [
+              "24px",
+              { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }
+            ]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-canvas text-graphite-text font-body-md antialiased selection:bg-mint-subtle selection:text-primary min-h-screen flex flex-col justify-between">
+<!-- ========================================================================= -->
+<!-- 1. CABEÇALHO (NAVBAR)                                                    -->
+<!-- ========================================================================= -->
+<header class="bg-surface/85 backdrop-blur-md text-primary docked full-width top-0 sticky z-50 shadow-sm border-b border-border-subtle">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20 w-full">
+<!-- Brand Logo Oficial Cana Med -->
+<a class="flex items-center gap-3 active:scale-[0.98] transition-transform duration-150 focus:outline-none" href="/">
+<img alt="Logotipo Cana Med" class="h-9 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnYfN04z0ntxC_mMvwSLTtiG7wwOv0HXsiheZa8gtyDGeh-GlxGTnNibD2aWcJqZCa_7t3hsPzhY8WvDDIt9ZzYh6MVaT1HerDv8Lsfo6D8fA0eVS2ESoc0Y3O3sxAlSnCYamqln1d2Mvfo2pcTtMAjTF3nrEihXj22z4MDv9IdZ_vvejEGbO41FGdMiWzlm_3DTdMjdhlkETkW-2x0emNHWV7oXbbZxoXCg0PurX0ts5TVq-_rWI82VK0aCpfJHfamas"/>
+</a>
+<!-- Desktop Navigation Cluster -->
+<nav class="hidden md:flex items-center gap-8 text-label-md font-label-md">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="/">Início</a>
+<!-- Active Nav: Sobre Nós -->
+<a class="text-primary font-bold border-b-2 border-primary pb-1 flex items-center gap-1" href="/sobre-nos">
+          Sobre Nós
+        </a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="/frentes-de-atuacao">Frentes de Atuação</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150 flex items-center gap-1.5" href="/cana-med-mulher">
+<span>Cana Med Mulher</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="/contato">Contato</a>
+</nav>
+<!-- Trailing Action Button -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary text-label-md font-label-md px-5 py-2.5 rounded-lg hover:bg-primary-container active:scale-[0.98] transition-all duration-150 shadow-sm" href="/contato">
+          Fale com a Cana Med
+        </a>
+<!-- Mobile Menu Trigger -->
+<button aria-label="Abrir Menu de Navegação" class="md:hidden flex items-center justify-center p-2 rounded-lg text-graphite-text hover:bg-surface-subtle transition-colors" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Dropdown -->
+<div class="hidden md:hidden bg-surface border-t border-border-subtle px-6 py-5 shadow-lg space-y-4" id="mobileDrawer">
+<div class="flex flex-col gap-3 font-label-md text-label-md">
+<a class="text-on-surface-variant py-1 hover:text-primary" href="/">Início</a>
+<a class="text-primary font-bold py-1 border-l-2 border-primary pl-2" href="/sobre-nos">Sobre Nós</a>
+<a class="text-on-surface-variant py-1 hover:text-primary" href="/frentes-de-atuacao">Frentes de Atuação</a>
+<a class="text-on-surface-variant py-1 hover:text-primary flex items-center justify-between" href="/cana-med-mulher">
+<span>Cana Med Mulher</span>
+<span class="text-caption font-caption text-secondary bg-surface-subtle px-2 py-0.5 rounded">Especializada</span>
+</a>
+<a class="text-on-surface-variant py-1 hover:text-primary" href="/contato">Contato</a>
+</div>
+<div class="pt-3 border-t border-border-subtle">
+<a class="w-full flex items-center justify-center bg-primary text-on-primary py-2.5 rounded-lg text-label-md font-label-md" href="/contato">
+          Fale com a Cana Med
+        </a>
+</div>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN CONTENT CANVAS                                                       -->
+<!-- ========================================================================= -->
+<main class="flex-grow w-full"><!-- BLOCO 1: NOSSA ORIGEM (Hero Editorial Minimalista e Sofisticado) -->
+<section class="relative pt-16 md:pt-24 pb-20 md:pb-24 overflow-hidden bg-gradient-to-b from-surface via-surface-canvas to-surface border-b border-border-subtle">
+<div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-mint-subtle/50 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-10 w-72 h-72 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+<div class="max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-mint-subtle border border-border-subtle mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide font-semibold">ORIGEM &amp; PROPÓSITO</span>
+</div>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-graphite-text tracking-tight mb-8">
+        Tecnologia especializada para transformar a gestão em saúde.
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-12 max-w-3xl">
+        A Cana Med foi idealizada por engenheiros de software com anos de experiência no mercado, que, incomodados com sistemas ultrapassados utilizados por grandes hospitais e com a dependência de processos manuais em clínicas de pequeno e médio porte, decidiram direcionar seus esforços ao desenvolvimento de soluções especializadas para cada realidade.
+      </p>
+<!-- Três Indicadores Discretos e Geométricos -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-border-subtle">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-mint-subtle flex items-center justify-center shrink-0 border border-border-subtle text-primary">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-graphite-text mb-1">Engenharia de Software com Propósito</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Arquiteturas robustas aliadas à simplicidade do uso clínico diário.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-mint-subtle flex items-center justify-center shrink-0 border border-border-subtle text-primary">
+<span class="material-symbols-outlined text-xl">rule</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-graphite-text mb-1">Superação de Processos Arcaicos</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Substituição de planilhas dispersas e burocracia por clareza sistêmica.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-mint-subtle flex items-center justify-center shrink-0 border border-border-subtle text-primary">
+<span class="material-symbols-outlined text-xl">hub</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-graphite-text mb-1">Soluções Específicas por Realidade</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Desenvolvimento adaptado às necessidades genuínas de cada setor médico.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOCO 2: TRANSIÇÃO & DESTAQUE VISUAL "CANA MED MULHER" -->
+<section class="py-20 md:py-28 bg-surface-card border-b border-border-subtle relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="rounded-2xl border border-border-subtle bg-gradient-to-br from-surface to-surface-canvas p-8 md:p-12 shadow-sm relative overflow-hidden">
+<!-- Barra sutil com degradê sutil Cana Med Mulher -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#d9298a] via-[#a83279] to-[#492268]"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Lado da Imagem / Logo Oficial -->
+<div class="lg:col-span-5 flex flex-col items-start justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 border border-secondary/20 mb-6">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">NOSSA PRIMEIRA SOLUÇÃO</span>
+</div>
+<div class="bg-surface-card p-6 rounded-xl border border-border-subtle shadow-sm mb-4 inline-block w-full max-w-sm">
+<img alt="Logotipo Oficial Cana Med Mulher" class="h-12 md:h-14 w-auto object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsFOtMc3_EhwXzust0-tv7Rz6Doq31nnPbTlu_SKWAUAi-cBP56a6eN7vXaVFwXxuV9wYUgwPVw-sgqnmxFfCWAJQnUwwpKn-j2zpXaOzIZTgzFxgCj6Sy9AOcQQxJufeCDnVYK1MCxpPV96srR1Gp-9a1u31EZgMV07RAh-ne7-nPLSIO78G6yhxX89Iz9kQeZsb9G07WeSodXoyP1V7enS7HUmWhmrp-489MIFst35uHYARl2G3GncbgpR9_0gOb-sk"/>
+</div>
+<span class="inline-block px-3 py-1 rounded-full text-caption font-caption bg-secondary/10 text-secondary font-semibold">
+            Iniciativa Especializada em Saúde Feminina
+          </span>
+</div>
+<!-- Lado de Conteúdo Editorial -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-graphite-text mb-4">
+            Gestão ginecológica pensada para a realidade das clínicas.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-4">
+            Uma solução especializada na gestão de clínicas ginecológicas e obstétricas, idealizada para aproximar tecnologia, organização e a realidade de quem cuida da saúde da mulher.
+          </p>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed mb-8">
+            A Cana Med Mulher é a primeira iniciativa da Cana Med: uma solução voltada à organização da rotina de clínicas ginecológicas e obstétricas, considerando os processos de agendamento, cadastro e fluxo de atendimento.
+          </p>
+<!-- Três Pilares da Solução -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 pt-6 border-t border-border-subtle">
+<div class="p-3.5 rounded-lg bg-surface-card border border-border-subtle">
+<div class="text-primary mb-2"><span class="material-symbols-outlined text-xl">calendar_today</span></div>
+<h4 class="font-label-md text-label-md text-graphite-text font-semibold">Agendamento e Cadastros Especializados</h4>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-card border border-border-subtle">
+<div class="text-primary mb-2"><span class="material-symbols-outlined text-xl">favorite</span></div>
+<h4 class="font-label-md text-label-md text-graphite-text font-semibold">Fluxo Clínico Acolhedor</h4>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-card border border-border-subtle">
+<div class="text-primary mb-2"><span class="material-symbols-outlined text-xl">shield_with_heart</span></div>
+<h4 class="font-label-md text-label-md text-graphite-text font-semibold">Privacidade e Cuidado Obstétrico</h4>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary text-label-md font-label-md px-6 py-3 rounded-lg hover:bg-primary-container active:scale-[0.98] transition-all duration-150 shadow-sm group" href="/cana-med-mulher">
+<span>Conheça a Cana Med Mulher</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOCO 3: ENCERRAMENTO (Curto e direto) -->
+<section class="py-16 md:py-20 bg-surface text-center">
+<div class="max-w-4xl mx-auto px-6 md:px-12 flex flex-col items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-mint-subtle flex items-center justify-center text-primary mb-5 border border-border-subtle">
+<span class="material-symbols-outlined text-2xl">lightbulb</span>
+</div>
+<h3 class="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md text-graphite-text mb-6 max-w-2xl leading-snug">
+      Estamos desenvolvendo soluções a partir dos desafios reais de cada contexto da saúde.
+    </h3>
+<a class="inline-flex items-center justify-center bg-transparent border border-primary text-primary text-label-md font-label-md px-8 py-3 rounded-lg hover:bg-mint-subtle active:scale-[0.98] transition-all duration-150 shadow-sm" href="/frentes-de-atuacao">
+      Conheça nossas soluções
+    </a>
+</div>
+</section></main>
+<!-- ========================================================================= -->
+<!-- 8. RODAPÉ INSTITUCIONAL (FOOTER)                                          -->
+<!-- ========================================================================= -->
+<footer class="bg-surface-subtle border-t border-border-subtle w-full docked full-width bottom">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-16 w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-border-subtle">
+<!-- Identidade e Posicionamento -->
+<div class="md:col-span-5 space-y-4">
+<a class="inline-block focus:outline-none" href="/">
+<img alt="Logotipo Cana Med" class="h-9 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnYfN04z0ntxC_mMvwSLTtiG7wwOv0HXsiheZa8gtyDGeh-GlxGTnNibD2aWcJqZCa_7t3hsPzhY8WvDDIt9ZzYh6MVaT1HerDv8Lsfo6D8fA0eVS2ESoc0Y3O3sxAlSnCYamqln1d2Mvfo2pcTtMAjTF3nrEihXj22z4MDv9IdZ_vvejEGbO41FGdMiWzlm_3DTdMjdhlkETkW-2x0emNHWV7oXbbZxoXCg0PurX0ts5TVq-_rWI82VK0aCpfJHfamas"/>
+</a>
+<p class="font-body-sm text-body-sm text-text-muted max-w-sm leading-relaxed">
+            Gestão inteligente, descomplicada e orientada ao ser humano para clínicas e serviços de saúde que colocam as pessoas em primeiro lugar.
+          </p>
+<div class="pt-2 text-label-sm font-label-sm text-primary font-semibold italic">
+            “Eficiência para quem mais precisa.”
+          </div>
+</div>
+<!-- Links Institucionais Primários -->
+<div class="md:col-span-4 space-y-3">
+<h4 class="font-title-md text-title-md text-graphite-text font-semibold">Navegação</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-text-muted hover:text-primary transition-colors duration-150" href="/">Início</a></li>
+<li><a class="text-primary font-semibold" href="/sobre-nos">Sobre Nós</a></li>
+<li><a class="text-text-muted hover:text-primary transition-colors duration-150" href="/frentes-de-atuacao">Frentes de Atuação</a></li>
+<li><a class="text-text-muted hover:text-primary transition-colors duration-150" href="/cana-med-mulher">Cana Med Mulher</a></li>
+<li><a class="text-text-muted hover:text-primary transition-colors duration-150" href="/contato">Contato</a></li>
+</ul>
+</div>
+<!-- Compromissos e Conformidade -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="font-title-md text-title-md text-graphite-text font-semibold">Segurança &amp; Ética</h4>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+            Concebido sob as diretrizes de privacidade e proteção de dados em conformidade com a LGPD e conselhos de classe médica.
+          </p>
+<div class="pt-2 flex items-center gap-3">
+<a class="font-label-sm text-label-sm text-text-muted hover:text-primary transition-colors" href="/termos-de-uso">Termos de Uso</a>
+<span class="text-border-muted">•</span>
+<a class="font-label-sm text-label-sm text-text-muted hover:text-primary transition-colors" href="/privacidade">Privacidade</a>
+</div>
+</div>
+</div>
+<!-- Copyright Subfooter -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-text-muted">
+<div>
+          © 2025 Cana Med Gestão em Saúde. Todos os direitos reservados. Eficiência para quem mais precisa.
+        </div>
+<div class="flex items-center gap-1 text-caption font-caption text-text-muted">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="lock">lock</span>
+          Ambiente Institucional Seguro
+        </div>
+</div>
+</div>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+
+      if (mobileBtn && mobileDrawer) {
+        mobileBtn.addEventListener('click', function () {
+          mobileDrawer.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body></html>

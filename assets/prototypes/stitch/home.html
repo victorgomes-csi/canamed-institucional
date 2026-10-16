@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cana Med — Eficiência para quem mais precisa | Gestão em Saúde</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Container Queries and Forms -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-subtle": "#F0F4F4",
+            "surface-container": "#e8eeff",
+            "tertiary-container": "#008264",
+            "tertiary": "#00664e",
+            "surface-container-high": "#e3e8f9",
+            "background": "#f9f9ff",
+            "tertiary-fixed": "#8ff6d1",
+            "on-primary-container": "#e3fffe",
+            "tertiary-fixed-dim": "#72d9b6",
+            "secondary-fixed-dim": "#8bd2de",
+            "surface": "#f9f9ff",
+            "on-tertiary-container": "#e4fff2",
+            "error": "#ba1a1a",
+            "outline-variant": "#bdc9c8",
+            "surface-card": "#FFFFFF",
+            "surface-container-highest": "#dde2f3",
+            "on-tertiary-fixed": "#002117",
+            "graphite-text": "#333333",
+            "on-secondary-fixed": "#001f24",
+            "on-secondary-container": "#1c6c77",
+            "inverse-surface": "#2a303d",
+            "secondary": "#156873",
+            "on-background": "#161c27",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#00513d",
+            "surface-dim": "#d4daea",
+            "inverse-primary": "#76d6d5",
+            "text-muted": "#718096",
+            "on-surface": "#161c27",
+            "secondary-fixed": "#a7eefb",
+            "on-secondary-fixed-variant": "#004f58",
+            "on-primary-fixed": "#002020",
+            "inverse-on-surface": "#ecf0ff",
+            "on-surface-variant": "#3e4949",
+            "primary": "#006565",
+            "on-primary-fixed-variant": "#004f4f",
+            "surface-bright": "#f9f9ff",
+            "mint-subtle": "#E6FFFA",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f1f3ff",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "secondary-container": "#a4ebf8",
+            "surface-canvas": "#F8FAFA",
+            "border-subtle": "#E2E8F0",
+            "surface-variant": "#dde2f3",
+            "primary-fixed": "#93f2f2",
+            "border-muted": "#CBD5E1",
+            "primary-fixed-dim": "#76d6d5",
+            "outline": "#6e7979",
+            "error-container": "#ffdad6",
+            "surface-tint": "#006a6a",
+            "on-error": "#ffffff",
+            "primary-container": "#008080"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin-desktop": "3rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "margin-tablet": "2rem",
+            "space-sm": "0.5rem",
+            "gutter-desktop": "1.5rem",
+            "gutter": "1.25rem",
+            "margin": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Plus Jakarta Sans"],
+            "caption": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-canvas text-graphite-text font-body-md antialiased selection:bg-mint-subtle selection:text-primary">
+<!-- ========================================== -->
+<!-- 1. CABEÇALHO (TopNavBar - Shared Component) -->
+<!-- ========================================== -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-md border-b border-border-subtle dark:border-outline-variant/30 shadow-sm transition-all duration-200">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20 w-full">
+<!-- Brand Logo Oficial -->
+<a class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-primary rounded-lg p-1" href="#inicio">
+<img alt="Cana Med - Eficiência para quem mais precisa" class="h-10 md:h-11 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnYfN04z0ntxC_mMvwSLTtiG7wwOv0HXsiheZa8gtyDGeh-GlxGTnNibD2aWcJqZCa_7t3hsPzhY8WvDDIt9ZzYh6MVaT1HerDv8Lsfo6D8fA0eVS2ESoc0Y3O3sxAlSnCYamqln1d2Mvfo2pcTtMAjTF3nrEihXj22z4MDv9IdZ_vvejEGbO41FGdMiWzlm_3DTdMjdhlkETkW-2x0emNHWV7oXbbZxoXCg0PurX0ts5TVq-_rWI82VK0aCpfJHfamas"/>
+</a>
+<!-- Desktop Navigation Links -->
+<nav aria-label="Navegação Principal" class="hidden md:flex items-center gap-7 text-label-md font-label-md"><a class="nav-item text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 active:scale-[0.98] transition-transform duration-150" href="#inicio">Início</a>
+<a class="nav-item text-on-surface-variant dark:text-surface-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-[0.98]" href="#sobre">Sobre Nós</a>
+<a class="nav-item text-on-surface-variant dark:text-surface-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-[0.98]" href="#frentes">Frentes de Atuação</a>
+<a class="nav-item text-on-surface-variant dark:text-surface-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-[0.98]" href="#cana-med-mulher">Cana Med Mulher</a>
+<a class="nav-item text-on-surface-variant dark:text-surface-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-[0.98]" href="#contato">Contato</a></nav>
+<!-- Trailing Action & Mobile Menu Toggle -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary text-label-md font-label-md px-5 py-2.5 rounded-lg hover:bg-secondary transition-colors duration-150 active:scale-[0.98] shadow-sm" href="#contato">
+          Fale com a Cana Med
+        </a>
+<!-- Mobile Menu Button -->
+<button aria-expanded="false" aria-label="Abrir menu de navegação" class="md:hidden p-2 rounded-lg text-graphite-text hover:bg-surface-subtle focus:outline-none focus:ring-2 focus:ring-primary" id="mobile-menu-toggle" type="button">
+<span class="material-symbols-outlined text-headline-md" id="menu-icon">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer / Menu -->
+<div class="hidden md:hidden border-t border-border-subtle bg-surface-card px-6 py-6 space-y-4 shadow-lg animate-fadeIn" id="mobile-menu">
+<nav class="flex flex-col space-y-3 text-label-md font-label-md"><a class="mobile-nav-link text-primary font-bold py-2 border-l-4 border-primary pl-3" href="#inicio">Início</a>
+<a class="mobile-nav-link text-graphite-text hover:text-primary py-2 pl-4" href="#sobre">Sobre Nós</a>
+<a class="mobile-nav-link text-graphite-text hover:text-primary py-2 pl-4" href="#frentes">Frentes de Atuação</a>
+<a class="mobile-nav-link text-graphite-text hover:text-primary py-2 pl-4" href="#cana-med-mulher">Cana Med Mulher</a>
+<a class="mobile-nav-link text-graphite-text hover:text-primary py-2 pl-4" href="#contato">Contato</a></nav>
+<div class="pt-4 border-t border-border-subtle">
+<a class="mobile-nav-link flex w-full items-center justify-center bg-primary-container text-on-primary text-label-md font-label-md py-3 rounded-lg text-center" href="#contato">
+          Fale com a Cana Med
+        </a>
+</div>
+</div>
+</header>
+<main id="main-content">
+<!-- ========================================== -->
+<!-- 2. HERO SECTION — EDITORIAL DE ALTO IMPACTO -->
+<!-- ========================================== -->
+<section class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 bg-gradient-to-b from-surface via-surface-canvas to-surface-canvas border-b border-border-subtle" id="inicio">
+<!-- Tonal Grid Texture Background (Discreet) -->
+<div class="absolute inset-0 bg-[radial-gradient(#CBD5E1_1px,transparent_1px)] [background-size:24px_24px] opacity-30 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Coluna Esquerda: Texto Editorial e Proposta de Valor -->
+<div class="lg:col-span-7 space-y-6"><!-- Badge / Tag Institucional -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-mint-subtle border border-border-subtle text-secondary text-caption font-caption tracking-wider">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim inline-block animate-pulse"></span>
+  GESTÃO • ORGANIZAÇÃO • SAÚDE
+</div>
+<!-- Título Principal H1 -->
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero text-graphite-text tracking-tight max-w-2xl">
+  Mais eficiência para quem dedica a vida a cuidar.
+</h1>
+<!-- Subtítulo Curto -->
+<p class="text-body-lg font-body-lg text-text-muted max-w-xl leading-relaxed">
+  A Cana Med existe para tornar a rotina de clínicas e serviços de saúde mais organizada, eficiente e humana, conectando processos estruturados ao cuidado com as pessoas.
+</p>
+<!-- Ações Primárias & Secundárias -->
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3.5 rounded-lg hover:bg-secondary transition-all duration-150 active:scale-[0.98] shadow-sm" href="#sobre">
+    Conheça a Cana Med
+    <span class="material-symbols-outlined ml-2 text-headline-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-primary-container text-primary font-label-md text-label-md px-6 py-3.5 rounded-lg hover:bg-mint-subtle transition-all duration-150 active:scale-[0.98]" href="#frentes">
+    Conheça nossas soluções
+  </a>
+</div>
+<!-- Selo de Rigor Institucional -->
+<div class="pt-6 border-t border-border-subtle flex items-center gap-4 text-caption font-caption text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-body-md" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Metodologia Orientada à Prática Clínica</span>
+</div>
+<span class="text-border-muted">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-body-md" style="font-variation-settings: 'FILL' 1;">security</span>
+<span>Conformidade &amp; Ética em Saúde</span>
+</div>
+</div></div>
+<!-- Coluna Direita: Composição Arquitetural Editorial ("Ordem sem Rigidez") -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Cartão Principal Bento com Elevação Tonal e Borda de Destaque -->
+<div class="bg-surface-card rounded-xl border border-border-subtle shadow-sm p-6 relative z-20 space-y-5">
+<!-- Topo do Card com Monograma Oficial -->
+<div class="flex items-center justify-between pb-4 border-b border-border-subtle">
+<div class="flex items-center gap-3">
+<img alt="Monograma Cana Med" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD13ZqLr66d9i7x0qRVBVqXDkyraAKbf1Pr_1ztclHsDuKGFmKOUG0CaFvGGYmu4yU26r1Fnh74jK50oE-VmRvH6WSitpLo_yH3BtMpnH4MVCAnMUiHZo4aOlSkXZwgREPdiCt-jCAy78X1rNe7wtlqI4cEdFqSWIyAMTS6unVQAsyWM2yCYRbGEBmgiEYld-yCQStnfvbfWUh5WADWmVch9--3SRQfRHxJNe_4UJeAwmVCQZm4Ylxgz_HLg5RTKPjVLQ4"/>
+<div>
+<div class="text-title-md font-title-md text-graphite-text">Fluxo Operacional Integrado</div>
+<div class="text-caption font-caption text-text-muted">Equilíbrio &amp; Previsibilidade</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full text-caption font-caption bg-mint-subtle text-secondary border border-secondary/20">
+                    Ativo
+                  </span>
+</div>
+<!-- Simulação de Linha de Processo sem Ruído -->
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle border border-border-subtle">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-label-sm font-label-sm font-bold">
+                        1
+                      </div>
+<span class="text-body-sm font-body-sm font-medium text-graphite-text">Acolhimento &amp; Triagem Ágil</span>
+</div>
+<span class="text-caption font-caption text-primary font-semibold">100% Fluido</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle border border-border-subtle">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-label-sm font-label-sm font-bold">
+                        2
+                      </div>
+<span class="text-body-sm font-body-sm font-medium text-graphite-text">Sincronia de Consultório &amp; Agenda</span>
+</div>
+<span class="text-caption font-caption text-secondary font-semibold">Pontual</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle border border-border-subtle">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center text-label-sm font-label-sm font-bold">
+                        3
+                      </div>
+<span class="text-body-sm font-body-sm font-medium text-graphite-text">Pós-Consulta &amp; Continuidade</span>
+</div>
+<span class="text-caption font-caption text-tertiary font-semibold">Estruturado</span>
+</div>
+</div>
+<!-- Barra de Status Discreta -->
+<div class="pt-2 flex items-center justify-between text-label-sm font-label-sm text-text-muted">
+<span class="">Tempo Clínico Protegido:</span>
+<span class="text-primary font-bold">+40% foco assistencial</span>
+</div>
+</div>
+<!-- Cartão Flutuante Secundário Inferior -->
+<div class="mt-4 bg-surface-subtle/80 backdrop-blur-sm rounded-xl border border-border-subtle p-4 flex items-center justify-between shadow-sm relative z-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-headline-sm">tune</span>
+<div>
+<div class="text-label-md font-label-md text-graphite-text">Adaptação sem atrito</div>
+<div class="text-body-sm font-body-sm text-text-muted">Respeitando o ritmo da sua equipe</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. O CENÁRIO REAL DA GESTÃO EM SAÚDE      -->
+<!-- ========================================== -->
+<section class="py-20 bg-surface-card border-b border-border-subtle" id="cenario">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="max-w-3xl mb-12">
+<span class="text-caption font-caption uppercase tracking-wider text-secondary font-bold">O CENÁRIO QUE QUEREMOS TRANSFORMAR</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-graphite-text mt-2 mb-4">
+        Clínicas não deveriam perder tempo precioso com processos manuais e dispersos.
+      </h2>
+<p class="text-body-lg font-body-lg text-text-muted leading-relaxed">
+        Quando cadastros, confirmações de agenda e comunicação operam de forma isolada, a equipe gasta energia resolvendo gargalos em vez de focar no paciente.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+<!-- Ponto 1 -->
+<div class="p-6 rounded-xl bg-surface-canvas border border-border-subtle hover:border-primary/40 transition-all flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-lg bg-mint-subtle text-primary flex items-center justify-center font-bold text-label-md">01</span>
+<span class="material-symbols-outlined text-primary text-headline-sm">support_agent</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md text-graphite-text mb-2">Sobrecarga de canais e recepção</h3>
+<p class="text-body-sm font-body-sm text-text-muted leading-relaxed">
+            Mensagens simultâneas e ligações concorrem diretamente com o acolhimento presencial na recepção.
+          </p>
+</div>
+</div>
+<!-- Ponto 2 -->
+<div class="p-6 rounded-xl bg-surface-canvas border border-border-subtle hover:border-primary/40 transition-all flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-lg bg-mint-subtle text-secondary flex items-center justify-center font-bold text-label-md">02</span>
+<span class="material-symbols-outlined text-secondary text-headline-sm">sync_problem</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md text-graphite-text mb-2">Informações dispersas e retrabalho</h3>
+<p class="text-body-sm font-body-sm text-text-muted leading-relaxed">
+            Planilhas desconectadas e anotações manuais exigem repetição de cadastros e conferências desgastantes.
+          </p>
+</div>
+</div>
+<!-- Ponto 3 -->
+<div class="p-6 rounded-xl bg-surface-canvas border border-border-subtle hover:border-primary/40 transition-all flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-lg bg-mint-subtle text-tertiary flex items-center justify-center font-bold text-label-md">03</span>
+<span class="material-symbols-outlined text-tertiary text-headline-sm">meeting_room</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md text-graphite-text mb-2">Falta de continuidade com o consultório</h3>
+<p class="text-body-sm font-body-sm text-text-muted leading-relaxed">
+            Descompasso entre a recepção e a sala de atendimento reduz a previsibilidade e prejudica a experiência clínica.
+          </p>
+</div>
+</div>
+</div>
+<!-- Faixa de Ética e Segurança -->
+<div class="p-5 rounded-xl bg-mint-subtle/70 border border-border-subtle flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-headline-sm shrink-0">shield_with_heart</span>
+<p class="text-body-sm font-body-sm text-text-muted leading-snug">
+<strong class="text-graphite-text font-semibold">Tratamento ético e segurança de dados:</strong> Princípios inegociáveis para resguardar a privacidade e a confiança dos pacientes.
+        </p>
+</div>
+<span class="shrink-0 px-3 py-1 rounded-full bg-surface-card border border-border-subtle text-caption font-caption text-secondary font-semibold">Conformidade LGPD</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. QUEM É A CANA MED (PROPÓSITO & IDENTIDADE) -->
+<!-- ========================================== -->
+<!-- ========================================== -->
+<!-- 5. FRENTES DE ATUAÇÃO (Painel Interativo)   -->
+<!-- ========================================== -->
+<section class="py-24 bg-surface-card border-b border-border-subtle" id="frentes">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="max-w-3xl mb-14">
+<span class="text-caption font-caption uppercase tracking-wider text-secondary font-bold">Frentes de Atuação</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-graphite-text mt-2 mb-4">
+            Uma gestão integrada começa por diferentes frentes.
+          </h2>
+<p class="text-body-lg font-body-lg text-text-muted leading-relaxed">
+            A rotina de uma clínica reúne processos que precisam funcionar em conjunto. A Cana Med direciona o desenvolvimento de sua aplicação para conectar essas etapas em uma experiência mais organizada e intuitiva.
+          </p>
+</div>
+<!-- Painel Interativo com Abas Verticais e Visual Dinâmico -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Coluna Esquerda: Lista de Seleção de Abas -->
+<div aria-label="Frentes de Atuação Cana Med" class="lg:col-span-5 flex flex-col gap-3.5" role="tablist">
+<!-- Tab Button 01 -->
+<button aria-controls="panel-frente-1" aria-selected="true" class="frente-tab text-left p-5 rounded-xl border border-primary/40 bg-mint-subtle/50 text-graphite-text transition-all duration-200 relative group focus:outline-none focus:ring-2 focus:ring-primary shadow-xs" data-frente="1" id="tab-frente-1" role="tab">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-3">
+<div class="tab-icon-box w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-title-md">badge</span>
+</div>
+<span class="text-caption font-caption font-bold uppercase tracking-wider text-primary">Frente 01</span>
+</div>
+<span class="material-symbols-outlined text-primary text-title-md tab-indicator">arrow_forward</span>
+</div>
+<h3 class="text-title-md font-title-md text-graphite-text pl-12">Recepção e cadastro</h3>
+<p class="text-body-sm font-body-sm text-text-muted pl-12 mt-1">Primeiro contato organizado, acolhimento e dados operacionais.</p>
+</button>
+<!-- Tab Button 02 -->
+<button aria-controls="panel-frente-2" aria-selected="false" class="frente-tab text-left p-5 rounded-xl border border-border-subtle bg-surface-canvas text-graphite-text transition-all duration-200 relative group hover:border-primary/40 hover:bg-surface-subtle/50 focus:outline-none focus:ring-2 focus:ring-primary" data-frente="2" id="tab-frente-2" role="tab">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-3">
+<div class="tab-icon-box w-9 h-9 rounded-lg bg-surface-card border border-border-subtle text-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-title-md">calendar_month</span>
+</div>
+<span class="text-caption font-caption font-bold uppercase tracking-wider text-text-muted">Frente 02</span>
+</div>
+<span class="material-symbols-outlined text-text-muted opacity-0 group-hover:opacity-100 text-title-md tab-indicator transition-opacity">arrow_forward</span>
+</div>
+<h3 class="text-title-md font-title-md text-graphite-text pl-12">Agendamento e agenda</h3>
+<p class="text-body-sm font-body-sm text-text-muted pl-12 mt-1">Sintonia entre horários disponíveis e necessidades reais.</p>
+</button>
+<!-- Tab Button 03 -->
+<button aria-controls="panel-frente-3" aria-selected="false" class="frente-tab text-left p-5 rounded-xl border border-border-subtle bg-surface-canvas text-graphite-text transition-all duration-200 relative group hover:border-primary/40 hover:bg-surface-subtle/50 focus:outline-none focus:ring-2 focus:ring-primary" data-frente="3" id="tab-frente-3" role="tab">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-3">
+<div class="tab-icon-box w-9 h-9 rounded-lg bg-surface-card border border-border-subtle text-tertiary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-title-md">linear_scale</span>
+</div>
+<span class="text-caption font-caption font-bold uppercase tracking-wider text-text-muted">Frente 03</span>
+</div>
+<span class="material-symbols-outlined text-text-muted opacity-0 group-hover:opacity-100 text-title-md tab-indicator transition-opacity">arrow_forward</span>
+</div>
+<h3 class="text-title-md font-title-md text-graphite-text pl-12">Fluxo de atendimento</h3>
+<p class="text-body-sm font-body-sm text-text-muted pl-12 mt-1">Conexão fluida da chegada à consulta sem gargalos.</p>
+</button>
+<!-- Tab Button 04 -->
+<button aria-controls="panel-frente-4" aria-selected="false" class="frente-tab text-left p-5 rounded-xl border border-border-subtle bg-surface-canvas text-graphite-text transition-all duration-200 relative group hover:border-primary/40 hover:bg-surface-subtle/50 focus:outline-none focus:ring-2 focus:ring-primary" data-frente="4" id="tab-frente-4" role="tab">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-3">
+<div class="tab-icon-box w-9 h-9 rounded-lg bg-surface-card border border-border-subtle text-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-title-md">stethoscope</span>
+</div>
+<span class="text-caption font-caption font-bold uppercase tracking-wider text-text-muted">Frente 04</span>
+</div>
+<span class="material-symbols-outlined text-text-muted opacity-0 group-hover:opacity-100 text-title-md tab-indicator transition-opacity">arrow_forward</span>
+</div>
+<h3 class="text-title-md font-title-md text-graphite-text pl-12">Acompanhamento médico e informações clínicas</h3>
+<p class="text-body-sm font-body-sm text-text-muted pl-12 mt-1">Informações essenciais com sigilo ético e clareza.</p>
+</button>
+</div>
+<!-- Coluna Direita: Painel de Detalhes Dinâmico -->
+<div class="lg:col-span-7 bg-surface-canvas rounded-2xl border border-border-subtle p-8 lg:p-10 flex flex-col justify-between shadow-xs min-h-[520px]">
+<!-- Painel 1 (Default Ativo) -->
+<div aria-labelledby="tab-frente-1" class="frente-panel flex flex-col justify-between h-full space-y-6" id="panel-frente-1" role="tabpanel">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-subtle border border-primary/20 text-primary text-caption font-caption font-semibold">
+<span class="material-symbols-outlined text-body-sm">badge</span>
+FRENTE 01 • RECEPÇÃO E CADASTRO
+</div>
+<h3 class="text-headline-md font-headline-md text-graphite-text">
+Uma recepção mais organizada desde o primeiro contato.
+</h3>
+<p class="text-body-md font-body-md text-text-muted leading-relaxed">
+A recepção é uma das principais conexões entre a clínica e o paciente. A organização dos cadastros e das informações administrativas ajuda a estruturar essa etapa e a preparar a continuidade do atendimento.
+</p>
+<!-- Diagrama Visual Limpo -->
+<div class="p-5 rounded-xl bg-surface-card border border-border-subtle space-y-3">
+<div class="text-caption font-caption text-secondary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-sm">schema</span>
+Estrutura de Acolhimento Integrado
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+<div class="p-3 rounded-lg bg-surface-subtle border border-border-subtle/80">
+<div class="text-caption font-caption text-primary font-bold">1. Entrada</div>
+<div class="text-body-sm font-body-sm text-graphite-text font-medium mt-0.5">Identificação rápida</div>
+<div class="text-caption font-caption text-text-muted">Sem duplicidade</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle border border-border-subtle/80">
+<div class="text-caption font-caption text-secondary font-bold">2. Cadastro</div>
+<div class="text-body-sm font-body-sm text-graphite-text font-medium mt-0.5">Dados organizados</div>
+<div class="text-caption font-caption text-text-muted">Acesso estruturado</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle border border-border-subtle/80">
+<div class="text-caption font-caption text-tertiary font-bold">3. Encaminhamento</div>
+<div class="text-body-sm font-body-sm text-graphite-text font-medium mt-0.5">Aviso imediato</div>
+<div class="text-caption font-caption text-text-muted">Fluxo sem ruído</div>
+</div>
+</div>
+</div>
+<!-- Pontos Chave -->
+<div class="space-y-2.5 pt-2">
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Organização das informações cadastrais</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Apoio à rotina da recepção</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Consulta mais clara às informações necessárias</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Continuidade entre o cadastro e as demais etapas da operação</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Painel 2 (Hidden) -->
+<div aria-labelledby="tab-frente-2" class="frente-panel hidden flex flex-col justify-between h-full space-y-6" id="panel-frente-2" role="tabpanel">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-subtle border border-secondary/20 text-secondary text-caption font-caption font-semibold">
+<span class="material-symbols-outlined text-body-sm">calendar_month</span>
+FRENTE 02 • AGENDAMENTO E AGENDA
+</div>
+<h3 class="text-headline-md font-headline-md text-graphite-text">
+Mais clareza para organizar a rotina de atendimento.
+</h3>
+<p class="text-body-md font-body-md text-text-muted leading-relaxed">
+O agendamento conecta a disponibilidade dos profissionais às necessidades dos pacientes. Uma experiência bem estruturada ajuda a tornar a visualização e a organização da agenda mais claras para a equipe.
+</p>
+<!-- Diagrama Visual Limpo Agenda -->
+<div class="p-5 rounded-xl bg-surface-card border border-border-subtle space-y-3">
+<div class="text-caption font-caption text-secondary font-bold uppercase tracking-wider flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-sm">view_agenda</span>
+Visão da Grade Diária
+</span>
+<span class="text-caption font-caption text-text-muted">Turnos Sincronizados</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<div class="p-3.5 rounded-lg bg-surface-subtle border border-border-subtle/80 flex items-center justify-between">
+<div>
+<div class="text-caption font-caption text-secondary font-bold">Turno Matutino</div>
+<div class="text-body-sm font-body-sm text-graphite-text font-medium">08h00 — 12h00</div>
+<div class="text-caption font-caption text-text-muted mt-0.5">Horários equilibrados</div>
+</div>
+<span class="px-2 py-0.5 rounded text-caption font-caption bg-surface-card border border-border-subtle text-secondary font-semibold">Fluido</span>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-subtle border border-border-subtle/80 flex items-center justify-between">
+<div>
+<div class="text-caption font-caption text-primary font-bold">Turno Vespertino</div>
+<div class="text-body-sm font-body-sm text-graphite-text font-medium">13h30 — 18h00</div>
+<div class="text-caption font-caption text-text-muted mt-0.5">Intervalos protegidos</div>
+</div>
+<span class="px-2 py-0.5 rounded text-caption font-caption bg-surface-card border border-border-subtle text-primary font-semibold">Organizado</span>
+</div>
+</div>
+</div>
+<!-- Pontos Chave -->
+<div class="space-y-2.5 pt-2">
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-secondary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Visualização organizada dos horários</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-secondary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Gestão de agendamentos e alterações</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-secondary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Clareza sobre a programação diária</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-secondary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Continuidade entre a agenda e o fluxo de atendimento</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Painel 3 (Hidden) -->
+<div aria-labelledby="tab-frente-3" class="frente-panel hidden flex flex-col justify-between h-full space-y-6" id="panel-frente-3" role="tabpanel">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-subtle border border-tertiary/20 text-tertiary text-caption font-caption font-semibold">
+<span class="material-symbols-outlined text-body-sm">linear_scale</span>
+FRENTE 03 • FLUXO DE ATENDIMENTO
+</div>
+<h3 class="text-headline-md font-headline-md text-graphite-text">
+Cada etapa conectada à próxima.
+</h3>
+<p class="text-body-md font-body-md text-text-muted leading-relaxed">
+Da chegada do paciente ao andamento do atendimento, a operação depende de informações claras e processos bem coordenados. A Cana Med busca integrar esses momentos em uma experiência mais consistente para a equipe.
+</p>
+<!-- Diagrama Visual Limpo Fluxo Sequencial -->
+<div class="p-5 rounded-xl bg-surface-card border border-border-subtle space-y-3">
+<div class="text-caption font-caption text-secondary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-sm">timeline</span>
+Sequência sem Fricção
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<div class="flex-1 p-3 rounded-lg bg-surface-subtle border border-border-subtle text-center">
+<span class="material-symbols-outlined text-primary text-headline-sm">check_box</span>
+<div class="text-caption font-caption font-bold text-graphite-text mt-1">Recepção</div>
+<div class="text-[10px] text-text-muted">Acolhimento</div>
+</div>
+<span class="material-symbols-outlined text-border-muted text-body-md">arrow_forward</span>
+<div class="flex-1 p-3 rounded-lg bg-surface-subtle border border-border-subtle text-center">
+<span class="material-symbols-outlined text-secondary text-headline-sm">hourglass_empty</span>
+<div class="text-caption font-caption font-bold text-graphite-text mt-1">Espera</div>
+<div class="text-[10px] text-text-muted">Tempo visível</div>
+</div>
+<span class="material-symbols-outlined text-border-muted text-body-md">arrow_forward</span>
+<div class="flex-1 p-3 rounded-lg bg-surface-subtle border border-border-subtle text-center">
+<span class="material-symbols-outlined text-tertiary text-headline-sm">meeting_room</span>
+<div class="text-caption font-caption font-bold text-graphite-text mt-1">Atendimento</div>
+<div class="text-[10px] text-text-muted">Consultório</div>
+</div>
+</div>
+</div>
+<!-- Pontos Chave -->
+<div class="space-y-2.5 pt-2">
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-tertiary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Organização da chegada dos pacientes</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-tertiary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Acompanhamento das etapas do atendimento</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-tertiary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Clareza sobre o andamento da rotina</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-tertiary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Melhor continuidade entre recepção e profissionais</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Painel 4 (Hidden) -->
+<div aria-labelledby="tab-frente-4" class="frente-panel hidden flex flex-col justify-between h-full space-y-6" id="panel-frente-4" role="tabpanel">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-subtle border border-primary/20 text-primary text-caption font-caption font-semibold">
+<span class="material-symbols-outlined text-body-sm">stethoscope</span>
+FRENTE 04 • CONTEXTO CLÍNICO &amp; INFORMAÇÕES
+</div>
+<h3 class="text-headline-md font-headline-md text-graphite-text">
+Informações organizadas para apoiar o trabalho médico.
+</h3>
+<p class="text-body-md font-body-md text-text-muted leading-relaxed">
+O atendimento médico exige uma experiência adequada ao contexto clínico, com informações pertinentes organizadas e acesso compatível com as responsabilidades de cada profissional.
+</p>
+<!-- Diagrama Visual Limpo Contexto Clínico -->
+<div class="p-5 rounded-xl bg-surface-card border border-border-subtle space-y-3">
+<div class="text-caption font-caption text-secondary font-bold uppercase tracking-wider flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-sm">lock_person</span>
+Contexto de Consulta &amp; Sigilo
+</span>
+<span class="text-caption font-caption text-primary font-semibold">Controle Estrito</span>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-subtle border border-border-subtle flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">clinical_notes</span>
+<div>
+<div class="text-body-sm font-body-sm text-graphite-text font-medium">Prontuário &amp; Registro Clínico</div>
+<div class="text-caption font-caption text-text-muted">Acesso restrito apenas ao profissional responsável</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-title-md">shield</span>
+</div>
+</div>
+<!-- Pontos Chave -->
+<div class="space-y-2.5 pt-2">
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Organização das informações pertinentes ao atendimento</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Continuidade dos registros conforme os recursos disponibilizados pela aplicação</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Acesso controlado às informações</span>
+</div>
+<div class="flex items-start gap-3 text-body-sm font-body-sm text-graphite-text">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">check_circle</span>
+<span>Experiência de utilização pensada para o profissional de saúde</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA da Seção Frentes -->
+<div class="mt-14 p-8 rounded-2xl bg-surface-canvas border border-border-subtle flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="space-y-1 text-center sm:text-left">
+<h4 class="text-headline-sm font-headline-sm text-graphite-text">
+Conheça a visão da Cana Med para uma gestão mais integrada.
+</h4>
+<p class="text-body-sm font-body-sm text-text-muted">
+Processos pensados com rigor para descomplicar a jornada de clínicas e serviços de saúde.
+</p>
+</div>
+<a class="shrink-0 inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-secondary transition-all duration-150 active:scale-[0.98] shadow-sm" href="#metodo">
+Conheça nosso método
+<span class="material-symbols-outlined ml-2 text-headline-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section><section class="py-20 bg-surface-canvas border-b border-border-subtle relative overflow-hidden" id="cana-med-mulher">
+<div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+<div class="bg-surface-card rounded-2xl border border-border-subtle p-8 md:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-subtle border border-border-subtle text-caption font-caption font-semibold text-secondary tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+          Solução Especializada
+        </div>
+<div class="mb-2">
+<img alt="Cana Med Mulher" class="h-11 md:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACxvSs9xtA-3rx_JIrpbcDbCx68VnKZWQMBYlkpww-zAcXrc0cAb7-Iq1NOc5SoszaEWzAFoTmq9EofinxYVrXkLEsOJDTbwxOJBYOI6XG4y6D_YpXyrB4kp2KeQk6zCBX8QDN92hoU5r1I9nGD09CTRB_j9FWLP6vlpFLjrVIQYr1q_FP5s1JpN2mukNPVOivy8Lb5HIX5okhkjFEOO2jfvw6ZC4_9sTRZ_1fDsD0vxfcqj4-Tink4woydcu-axu4Xgk"/>
+</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-graphite-text tracking-tight">
+          Gestão com sensibilidade e acolhimento planejado para a saúde da mulher.
+        </h2>
+<p class="text-body-lg font-body-lg text-text-muted leading-relaxed">
+          Desenvolvida especificamente para consultórios e clínicas ginecológicas e obstétricas, a Cana Med Mulher alia fluxos clínicos personalizados a uma experiência humanizada em cada etapa do atendimento.
+        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-body-sm font-body-sm text-graphite-text">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-md">favorite</span>
+<span>Acolhimento empático e ágil</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-md">calendar_month</span>
+<span>Agendas personalizadas por protocolo</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-md">lock</span>
+<span>Privacidade reforçada para a mulher</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-md">flowsheet</span>
+<span>Continuidade do cuidado obstétrico</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-7 py-3.5 rounded-lg hover:bg-secondary transition-all duration-150 active:scale-[0.98] shadow-sm" href="/cana-med-mulher">
+            Conheça a Cana Med Mulher
+            <span class="material-symbols-outlined ml-2 text-headline-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 flex items-center justify-center p-6 bg-surface-subtle/80 rounded-xl border border-border-subtle">
+<div class="text-center space-y-4">
+<img alt="Monograma Cana Med Mulher" class="h-28 w-auto mx-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAghXUf1KP8Pvft1IOX1FN_u82jIdADhMS_PSCmnCIVAZ1XGiNLtSI-SEOnqK_Vkaz1A2zMaMbPHWtVxiwvU3yTJJWMOCijlaC9zfglBIYu5lPQIXPqEUmNhRTKXiwLko3wzn-XTnBv54NaVj8ICGQyPjcqmVV2mEaD9PvlUX2XfHeW0u5CZ9x1PaxD_9f8OjckllFb9jVBXd0JKVXu4h5frmAw-0WrntSaE3ZmV4-FIPxQ6FsNyz56cJ6Rcaffzh0RRSI"/>
+<div class="text-title-md font-title-md text-graphite-text">Cuidado &amp; Rigor Operacional</div>
+<p class="text-caption font-caption text-text-muted max-w-xs mx-auto">
+            A harmonia entre tecnologia moderna e a escuta ativa necessária para a saúde feminina integral.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. NOVA SEÇÃO: A CANA MED É PARA VOCÊ?     -->
+<!-- ========================================== -->
+<!-- ========================================== -->
+<!-- 7. REFORMULAÇÃO COMPLETA: MÉTODO DE ATUAÇÃO -->
+<!-- ========================================== -->
+<!-- ========================================== -->
+<!-- 8. SEÇÃO DE CONTATO & CTA INSTITUCIONAL    -->
+<!-- ========================================== -->
+<section class="py-20 bg-surface-canvas border-b border-border-subtle relative" id="contato">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-5 space-y-5">
+<span class="text-caption font-caption uppercase tracking-wider text-secondary font-bold">DIÁLOGO &amp; CONEXÃO</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-graphite-text">
+          Vamos construir uma gestão mais eficiente para a sua clínica?
+        </h2>
+<p class="text-body-lg font-body-lg text-text-muted leading-relaxed">
+          Convide nossa equipe para entender os desafios práticos da sua operação e descubra como simplificar sua rotina de ponta a ponta.
+        </p>
+<div class="space-y-3 pt-2 text-body-md font-body-md text-graphite-text">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>contato@canamed.com.br</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span>Atendimento Nacional para Clínicas e Serviços de Saúde</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-mint-subtle border border-border-subtle text-caption font-caption text-secondary">
+<div class="font-bold flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-sm">lock</span>
+            Compromisso Ético &amp; Sigilo LGPD
+          </div>
+<p class="leading-relaxed text-text-muted">
+            Dados institucionais tratados com estrito sigilo profissional e utilizados exclusivamente para o contato direto da equipe.
+          </p>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-surface-card rounded-2xl border border-border-subtle p-8 shadow-sm">
+<form class="space-y-5" id="contact-form" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-graphite-text" for="nome">Nome Completo</label>
+<input class="w-full h-11 px-3.5 rounded-lg border border-border-muted bg-surface-canvas text-graphite-text font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 outline-none transition" id="nome" name="nome" placeholder="Ex.: Dra. Camila Torres" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-graphite-text" for="email">E-mail Profissional</label>
+<input class="w-full h-11 px-3.5 rounded-lg border border-border-muted bg-surface-canvas text-graphite-text font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 outline-none transition" id="email" name="email" placeholder="camila@clinica.com.br" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-graphite-text" for="clinica">Nome da Clínica</label>
+<input class="w-full h-11 px-3.5 rounded-lg border border-border-muted bg-surface-canvas text-graphite-text font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 outline-none transition" id="clinica" name="clinica" placeholder="Ex.: Clínica São Lucas" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-graphite-text" for="porte">Porte / Especialistas</label>
+<select class="w-full h-11 px-3.5 rounded-lg border border-border-muted bg-surface-canvas text-graphite-text font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 outline-none transition" id="porte" name="porte">
+<option value="1">Consultório Individual (1 a 2 salas)</option>
+<option value="2-5">Pequeno Porte (3 a 5 profissionais)</option>
+<option value="6-15">Médio Porte (6 a 15 profissionais)</option>
+<option value="15+">Centro Médico Expandido (15+)</option>
+</select>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-graphite-text" for="mensagem">Como podemos ajudar?</label>
+<textarea class="w-full p-3.5 rounded-lg border border-border-muted bg-surface-canvas text-graphite-text font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 outline-none transition resize-none" id="mensagem" name="mensagem" placeholder="Conte brevemente sua demanda principal..." required="" rows="3"></textarea>
+</div>
+<div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-8 py-3.5 rounded-lg hover:bg-secondary transition-all duration-150 active:scale-[0.98] shadow-sm" id="submit-btn" type="submit">
+<span>Entre em contato</span>
+<span class="material-symbols-outlined ml-2 text-headline-sm">send</span>
+</button>
+</div>
+<div class="hidden p-4 rounded-lg bg-mint-subtle border border-primary-container/30 text-secondary text-body-sm font-body-sm flex items-center gap-3" id="form-feedback">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Mensagem recebida com sucesso! Em breve entraremos em contato.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- 9. RODAPÉ INSTITUCIONAL (Footer - Shared)  -->
+<!-- ========================================== -->
+<footer class="docked full-width bottom bg-surface-subtle dark:bg-inverse-surface border-t border-border-subtle dark:border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-16 w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-border-subtle dark:border-outline-variant/20">
+<!-- Coluna Institucional Principal -->
+<div class="md:col-span-5 space-y-4">
+<a class="inline-block" href="#inicio">
+<img alt="Cana Med Gestão em Saúde" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnYfN04z0ntxC_mMvwSLTtiG7wwOv0HXsiheZa8gtyDGeh-GlxGTnNibD2aWcJqZCa_7t3hsPzhY8WvDDIt9ZzYh6MVaT1HerDv8Lsfo6D8fA0eVS2ESoc0Y3O3sxAlSnCYamqln1d2Mvfo2pcTtMAjTF3nrEihXj22z4MDv9IdZ_vvejEGbO41FGdMiWzlm_3DTdMjdhlkETkW-2x0emNHWV7oXbbZxoXCg0PurX0ts5TVq-_rWI82VK0aCpfJHfamas"/>
+</a>
+<p class="text-body-sm font-body-sm text-text-muted dark:text-surface-dim max-w-sm leading-relaxed">
+            Eficiência para quem mais precisa. Transformando a gestão em saúde através da organização responsável e do respeito genuíno aos profissionais e pacientes.
+          </p>
+</div>
+<!-- Links Institucionais -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="text-title-md font-title-md text-graphite-text dark:text-inverse-on-surface">Navegação</h4>
+<ul class="space-y-2 text-body-sm font-body-sm"><li><a class="text-text-muted dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#inicio">Início</a></li>
+<li><a class="text-text-muted dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#sobre">Sobre Nós</a></li>
+<li><a class="text-text-muted dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#frentes">Frentes de Atuação</a></li>
+<li><a class="text-text-muted dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#cana-med-mulher">Cana Med Mulher</a></li>
+<li><a class="text-text-muted dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#contato">Contato</a></li></ul>
+</div>
+<!-- Links de Apoio & Ética -->
+<div class="md:col-span-4 space-y-3">
+<h4 class="text-title-md font-title-md text-graphite-text dark:text-inverse-on-surface">Compromisso &amp; Transparência</h4>
+<p class="text-body-sm font-body-sm text-text-muted dark:text-surface-dim leading-relaxed">
+            Atuação ética alinhada às melhores práticas regulatórias em saúde no Brasil, garantindo a proteção e integridade de dados operacionais.
+          </p>
+<div class="pt-2 flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-surface-card dark:bg-inverse-surface border border-border-subtle text-caption font-caption text-secondary font-semibold">
+              LGPD em Saúde
+            </span>
+<span class="px-2.5 py-1 rounded bg-surface-card dark:bg-inverse-surface border border-border-subtle text-caption font-caption text-primary font-semibold">
+              Rigor Clínico
+            </span>
+</div>
+</div>
+</div>
+<!-- Barra Inferior de Direitos Autorais -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-label-sm font-label-sm text-text-muted dark:text-surface-dim">
+<div class="">
+          © 2025 Cana Med Gestão em Saúde. Todos os direitos reservados. Eficiência para quem mais precisa.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#contato">Termos de Uso</a>
+<a class="hover:text-primary transition-colors" href="#contato">Privacidade</a>
+<a class="hover:text-primary transition-colors" href="#contato">Contato</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- MICRO-INTERAÇÕES JAVASCRIPT               -->
+<!-- ========================================== -->
+<script>
+    // 1. Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (mobileMenuToggle && mobileMenu) {
+      mobileMenuToggle.addEventListener('click', () => {
+        const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+        mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+        menuIcon.textContent = isExpanded ? 'menu' : 'close';
+      });
+
+      // Fechar menu mobile ao clicar em um link
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+          menuIcon.textContent = 'menu';
+        });
+      });
+    }
+
+    // 2. Active Navigation Spy on Scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-item');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      const scrollPos = window.scrollY + 120;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(item => {
+        const href = item.getAttribute('href').replace('#', '');
+        if (href === currentSectionId) {
+          item.className = 'nav-item text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 active:scale-[0.98] transition-all duration-150';
+        } else {
+          item.className = 'nav-item text-on-surface-variant dark:text-surface-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-[0.98]';
+        }
+      });
+    });
+
+    // 3. Tab Switching for 'Frentes de Atuação'
+    const frenteTabs = document.querySelectorAll('.frente-tab');
+    const frentePanels = document.querySelectorAll('.frente-panel');
+
+    frenteTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-frente');
+        
+        // Desativar todas as abas
+        frenteTabs.forEach(t => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('border-primary/40', 'bg-mint-subtle/50', 'shadow-xs');
+          t.classList.add('border-border-subtle', 'bg-surface-canvas');
+          
+          const iconBox = t.querySelector('.tab-icon-box');
+          if (iconBox) {
+            iconBox.classList.remove('bg-primary-container', 'text-on-primary');
+            iconBox.classList.add('bg-surface-card', 'border', 'border-border-subtle');
+          }
+          const indicator = t.querySelector('.tab-indicator');
+          if (indicator) {
+            indicator.classList.remove('text-primary');
+            indicator.classList.add('text-text-muted', 'opacity-0');
+          }
+        });
+
+        // Ativar aba clicada
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.add('border-primary/40', 'bg-mint-subtle/50', 'shadow-xs');
+        tab.classList.remove('border-border-subtle', 'bg-surface-canvas');
+        
+        const activeIconBox = tab.querySelector('.tab-icon-box');
+        if (activeIconBox) {
+          activeIconBox.classList.add('bg-primary-container', 'text-on-primary');
+          activeIconBox.classList.remove('bg-surface-card', 'border', 'border-border-subtle');
+        }
+        const activeIndicator = tab.querySelector('.tab-indicator');
+        if (activeIndicator) {
+          activeIndicator.classList.add('text-primary');
+          activeIndicator.classList.remove('text-text-muted', 'opacity-0');
+        }
+
+        // Exibir painel correspondente com suave transição
+        frentePanels.forEach(panel => {
+          panel.classList.add('hidden');
+          panel.classList.remove('animate-fadeIn');
+        });
+
+        const targetPanel = document.getElementById(`panel-frente-${targetId}`);
+        if (targetPanel) {
+          targetPanel.classList.remove('hidden');
+          targetPanel.classList.add('animate-fadeIn');
+        }
+      });
+
+      // Suporte para navegação por teclado (Enter / Space / Setas)
+      tab.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          tab.click();
+        }
+      });
+    });
+
+    // 4. Feedback Institucional do Formulário
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const submitBtn = document.getElementById('submit-btn');
+      const feedback = document.getElementById('form-feedback');
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span class="inline-block animate-spin mr-2">⏳</span>
+          <span>Registrando mensagem...</span>
+        `;
+      }
+
+      setTimeout(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `
+            <span>Mensagem Enviada</span>
+            <span class="material-symbols-outlined ml-2 text-headline-sm">check</span>
+          `;
+          submitBtn.classList.add('bg-tertiary');
+        }
+
+        if (feedback) {
+          feedback.classList.remove('hidden');
+        }
+
+        // Limpa formulário
+        document.getElementById('contact-form').reset();
+      }, 700);
+    }
+  </script>
+</body></html>
