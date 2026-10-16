@@ -4,7 +4,7 @@
 | :--- | :--- |
 | **ID** | SPEC-0001 |
 | **Título** | Construção do Site Institucional Cana Med (Home, Sobre Nós e Cana Med Mulher) |
-| **Status** | Em Revisão (Fase A) |
+| **Status** | Implementada |
 | **Versão** | 1.0 |
 | **Data** | 2026-10-16 |
 | **Autor** | Planejador (`planejador`) |

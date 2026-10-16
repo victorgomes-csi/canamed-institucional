@@ -116,11 +116,11 @@ canamed-institucional/
     } as const;
     ```
 
-- [ ] **Step 1: Configurar `package.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `index.html`, `src/index.css` e copiar `assets/` para `public/assets/`**
+- [x] **Step 1: Configurar `package.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `index.html`, `src/index.css` e copiar `assets/` para `public/assets/`**
 
 Configurar o Tailwind CSS exatamente com as cores, fontes (`Plus Jakarta Sans`), espaçamentos e tamanhos tipográficos (`display-hero`, `headline-lg`, `headline-md`, `headline-sm`, `title-md`, `body-lg`, `body-md`, `body-sm`, `label-md`, `label-sm`, `caption`) e classes utilitárias de gradiente da Cana Med Mulher (`.brand-gradient-text`, `.brand-button-gradient`, `.brand-tag-bg`) extraídos dos protótipos do Stitch.
 
-- [ ] **Step 2: Write the failing test `src/constants/assets.test.ts`**
+- [x] **Step 2: Write the failing test `src/constants/assets.test.ts`**
 
 ```ts
 import { describe, it, expect } from 'vitest';
@@ -140,21 +140,21 @@ describe('Official Local Assets (RN-001 / CA-007)', () => {
 });
 ```
 
-- [ ] **Step 3: Run test to verify it fails**
+- [x] **Step 3: Run test to verify it fails**
 
 Run: `npx vitest run src/constants/assets.test.ts`
 Expected: FAIL with module `./assets` not found.
 
-- [ ] **Step 4: Implement `src/constants/assets.ts`**
+- [x] **Step 4: Implement `src/constants/assets.ts`**
 
 Exportar `BRAND_ASSETS` e `APP_SCREENSHOTS` apontando para os caminhos locais em `/assets/brand/` e `/assets/screenshots/`.
 
-- [ ] **Step 5: Run test to verify it passes**
+- [x] **Step 5: Run test to verify it passes**
 
 Run: `npx vitest run src/constants/assets.test.ts`
 Expected: PASS (1 passed).
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add .
@@ -178,7 +178,7 @@ git commit -m "chore: scaffold project with Stitch design tokens and local offic
   - `Footer`: `export function Footer(): JSX.Element`
   - `ScrollToAnchor`: `export function ScrollToAnchor(): null`
 
-- [ ] **Step 1: Write the failing test `src/components/layout/Layout.test.tsx`**
+- [x] **Step 1: Write the failing test `src/components/layout/Layout.test.tsx`**
 
 ```tsx
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -240,21 +240,21 @@ describe('Header & Footer Shared Layout (RN-003, CA-006)', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npx vitest run src/components/layout/Layout.test.tsx`
 Expected: FAIL with module `./Header` not found.
 
-- [ ] **Step 3: Implement `Header.tsx`, `Footer.tsx`, and `ScrollToAnchor.tsx`**
+- [x] **Step 3: Implement `Header.tsx`, `Footer.tsx`, and `ScrollToAnchor.tsx`**
 
 Implementar `Header` com detecção de rota ativa (`useLocation`), exibindo `BRAND_ASSETS.mulherLogoLonga` e destaque `#b8186c` quando `location.pathname === '/cana-med-mulher'`, e `BRAND_ASSETS.canamedLogoFull` com destaque `text-primary` nas demais rotas. Incluir links para `/`, `/sobre-nos`, `/#frentes`, `/cana-med-mulher`, `/#contato` (ou `#contato` local na página Mulher) e drawer mobile controlado por estado React.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npx vitest run src/components/layout/Layout.test.tsx`
 Expected: PASS (4 passed).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/components/layout/
@@ -277,7 +277,7 @@ git commit -m "feat(layout): add shared Header, Footer, and ScrollToAnchor compo
   - `FrentesSection`: `export function FrentesSection(): JSX.Element`
   - `HomePage`: `export function HomePage(): JSX.Element`
 
-- [ ] **Step 1: Write the failing tests `src/components/home/FrentesSection.test.tsx` and `src/pages/HomePage.test.tsx`**
+- [x] **Step 1: Write the failing tests `src/components/home/FrentesSection.test.tsx` and `src/pages/HomePage.test.tsx`**
 
 ```tsx
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -351,21 +351,21 @@ describe('HomePage ("/" - CA-001, CA-005)', () => {
 });
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `npx vitest run src/components/home/FrentesSection.test.tsx src/pages/HomePage.test.tsx`
 Expected: FAIL with modules not found.
 
-- [ ] **Step 3: Implement `FrentesSection.tsx` and `HomePage.tsx` matching `assets/prototypes/stitch/home.html`**
+- [x] **Step 3: Implement `FrentesSection.tsx` and `HomePage.tsx` matching `assets/prototypes/stitch/home.html`**
 
 Fidelidade 1:1 a todos os textos, badges, cartões Bento (`Fluxo Operacional Integrado`, `+40% foco assistencial`, `Adaptação sem atrito`), 3 cards do Cenário Real + faixa LGPD, as 4 abas e painéis das Frentes de Atuação, o bloco de destaque `Cana Med Mulher` (usando `BRAND_ASSETS.mulherLogoLonga` e `BRAND_ASSETS.mulherLogoCurta`) e o formulário de contato institucional.
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `npx vitest run src/components/home/FrentesSection.test.tsx src/pages/HomePage.test.tsx`
 Expected: PASS (3 passed).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/components/home/ src/pages/HomePage*
@@ -384,7 +384,7 @@ git commit -m "feat(home): implement HomePage and interactive FrentesSection fro
 - Consumes: `BRAND_ASSETS` from `src/constants/assets.ts`.
 - Produces: `export function AboutPage(): JSX.Element`
 
-- [ ] **Step 1: Write the failing test `src/pages/AboutPage.test.tsx`**
+- [x] **Step 1: Write the failing test `src/pages/AboutPage.test.tsx`**
 
 ```tsx
 import { render, screen } from '@testing-library/react';
@@ -426,24 +426,24 @@ describe('AboutPage ("/sobre-nos" - CA-003)', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npx vitest run src/pages/AboutPage.test.tsx`
 Expected: FAIL with module `./AboutPage` not found.
 
-- [ ] **Step 3: Implement `src/pages/AboutPage.tsx` matching `assets/prototypes/stitch/sobre-nos.html`**
+- [x] **Step 3: Implement `src/pages/AboutPage.tsx` matching `assets/prototypes/stitch/sobre-nos.html`**
 
 Reproduzir os 3 blocos estruturais de `sobre-nos.html`:
 1. Bloco 1 (`ORIGEM & PROPÓSITO`): H1, parágrafo sobre a idealização por engenheiros de software e os 3 indicadores geométricos (`terminal`, `rule`, `hub`).
 2. Bloco 2 (`NOSSA PRIMEIRA SOLUÇÃO`): Card com barra superior em degradê `from-[#d9298a] via-[#a83279] to-[#492268]`, logotipo `BRAND_ASSETS.mulherLogoLonga`, 3 pilares (`Agendamento e Cadastros Especializados`, `Fluxo Clínico Acolhedor`, `Privacidade e Cuidado Obstétrico`) e botão `"Conheça a Cana Med Mulher"` (`/cana-med-mulher`).
 3. Bloco 3 (Encerramento): Ícone `lightbulb`, título e botão `"Conheça nossas soluções"` (`/#frentes`).
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npx vitest run src/pages/AboutPage.test.tsx`
 Expected: PASS (1 passed).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/pages/AboutPage*
@@ -462,7 +462,7 @@ git commit -m "feat(about): implement AboutPage (Sobre Nós) matching Stitch des
 - Consumes: `APP_SCREENSHOTS` from `src/constants/assets.ts`.
 - Produces: `export function CanamedMulherPage(): JSX.Element`
 
-- [ ] **Step 1: Write the failing test `src/pages/CanamedMulherPage.test.tsx`**
+- [x] **Step 1: Write the failing test `src/pages/CanamedMulherPage.test.tsx`**
 
 ```tsx
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -529,21 +529,21 @@ describe('CanamedMulherPage ("/cana-med-mulher" - CA-004, CA-005, CA-007)', () =
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npx vitest run src/pages/CanamedMulherPage.test.tsx`
 Expected: FAIL with module `./CanamedMulherPage` not found.
 
-- [ ] **Step 3: Implement `src/pages/CanamedMulherPage.tsx` matching `assets/prototypes/stitch/canamed-mulher.html`**
+- [x] **Step 3: Implement `src/pages/CanamedMulherPage.tsx` matching `assets/prototypes/stitch/canamed-mulher.html`**
 
 Reproduzir todas as 6 seções de `canamed-mulher.html`, utilizando `APP_SCREENSHOTS` para os 4 módulos reais e o Browser Mockup do Hero, preservando o gradiente `.brand-gradient-text` e `.brand-button-gradient` e substituindo o `alert()` por um banner de confirmação inline acessível (`role="status"`).
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npx vitest run src/pages/CanamedMulherPage.test.tsx`
 Expected: PASS (2 passed).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/pages/CanamedMulherPage*
@@ -563,7 +563,7 @@ git commit -m "feat(mulher): implement CanamedMulherPage with real app showcase 
 - Consumes: `Header`, `Footer`, `ScrollToAnchor`, `HomePage`, `AboutPage`, `CanamedMulherPage`.
 - Produces: `export function App(): JSX.Element`
 
-- [ ] **Step 1: Write the failing integration test `src/App.test.tsx`**
+- [x] **Step 1: Write the failing integration test `src/App.test.tsx`**
 
 ```tsx
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -614,21 +614,21 @@ describe('App Multi-Page Routing & Local Asset Integrity (CA-001..CA-007)', () =
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npx vitest run src/App.test.tsx`
 Expected: FAIL with module `./App` not found.
 
-- [ ] **Step 3: Implement `src/App.tsx` and `src/main.tsx`**
+- [x] **Step 3: Implement `src/App.tsx` and `src/main.tsx`**
 
 Configurar `AppRoutes` com `<Header />`, `<ScrollToAnchor />`, `<Routes>` para `/`, `/sobre-nos`, `/cana-med-mulher`, rota curinga `*` redirecionando para `<Navigate to="/" replace />`, atualização automática de `document.title` por rota e `<Footer />`.
 
-- [ ] **Step 4: Run full test suite and production build to verify 100% pass**
+- [x] **Step 4: Run full test suite and production build to verify 100% pass**
 
 Run: `npm test -- --run && npm run build`
 Expected: PASS (todas as suítes de teste aprovadas e build Vite gerado em `dist/` sem erros TypeScript).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/App.tsx src/main.tsx src/App.test.tsx
