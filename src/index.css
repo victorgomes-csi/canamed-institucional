@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gradient accents for Cana Med Mulher identity */
+.brand-gradient-text {
+  background: linear-gradient(135deg, #e11d74 0%, #8b1874 50%, #4c1d95 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-button-gradient {
+  background: linear-gradient(135deg, #e11d74 0%, #7c2d8c 100%);
+}
+
+.brand-button-gradient:hover {
+  background: linear-gradient(135deg, #cc1565 0%, #682375 100%);
+}
+
+.brand-tag-bg {
+  background: linear-gradient(135deg, rgba(225, 29, 116, 0.08) 0%, rgba(124, 45, 140, 0.06) 100%);
+}
