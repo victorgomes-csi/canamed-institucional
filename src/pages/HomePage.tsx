@@ -262,7 +262,7 @@ export function HomePage(): JSX.Element {
               <div className="mb-2">
                 <img
                   alt="Cana Med Mulher"
-                  className="h-14 md:h-16 w-auto object-contain"
+                  className="h-9 md:h-11 w-auto object-contain"
                   src={BRAND_ASSETS.mulherLogoLonga}
                 />
               </div>
@@ -304,7 +304,7 @@ export function HomePage(): JSX.Element {
               <div className="text-center space-y-4">
                 <img
                   alt="Monograma Cana Med Mulher"
-                  className="h-32 md:h-36 w-auto mx-auto object-contain"
+                  className="h-20 md:h-24 w-auto mx-auto object-contain"
                   src={BRAND_ASSETS.mulherLogoCurta}
                 />
                 <div className="text-title-md font-title-md text-graphite-text">Cuidado &amp; Rigor Operacional</div>

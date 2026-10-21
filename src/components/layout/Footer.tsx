@@ -15,7 +15,7 @@ export function Footer(): JSX.Element {
               <img
                 src={BRAND_ASSETS.canamedLogoFull}
                 alt="Cana Med Gestão em Saúde"
-                className="h-14 md:h-16 w-auto object-contain"
+                className="h-9 md:h-10 w-auto object-contain"
               />
             </Link>
             <p className="text-body-sm font-body-sm text-text-muted max-w-sm leading-relaxed">

@@ -1,8 +1,8 @@
 export const BRAND_ASSETS = {
-  canamedLogoFull: '/assets/brand/canadamed_logogrande_comtitulo-removebg-preview.png',
+  canamedLogoFull: '/assets/brand/canamed-logo.svg',
   canamedMonogram: '/assets/brand/canamed_logo-removebg-preview.png',
-  mulherLogoLonga: '/assets/brand/canamed-mulher-logolonga.png',
-  mulherLogoCurta: '/assets/brand/canamed-mulher-logocurta.png',
+  mulherLogoLonga: '/assets/brand/canamed-mulher-logolonga.svg',
+  mulherLogoCurta: '/assets/brand/canamed-mulher-logocurta.svg',
 } as const;
 
 export const APP_SCREENSHOTS = {
