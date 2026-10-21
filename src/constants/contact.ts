@@ -5,5 +5,5 @@ export const CONTACT_INFO = {
   whatsappUrl: 'https://wa.me/5581998162597',
   instagramUrl: 'https://www.instagram.com/canamedsolutions/',
   instagramHandle: '@canamedsolutions',
-  email: 'contato@canamed.com.br',
+  email: 'contato@canamedsolutions.com',
 } as const;

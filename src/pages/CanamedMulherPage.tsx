@@ -774,7 +774,7 @@ export function CanamedMulherPage(): JSX.Element {
                     </button>
                     <a
                       className="w-full sm:w-auto text-center px-6 py-3 rounded-lg border border-border-subtle hover:bg-surface-subtle text-graphite-text text-label-md font-label-md transition-all"
-                      href="mailto:contato@canamed.com.br"
+                      href={`mailto:${CONTACT_INFO.email}`}
                     >
                       Fale com nossa equipe
                     </a>
