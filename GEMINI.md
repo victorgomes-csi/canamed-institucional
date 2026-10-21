@@ -41,7 +41,7 @@ Os protótipos HTML extraídos do Stitch estão versionados em [`assets/prototyp
      - `01 — Organize a agenda e recepção` (`09_app_agenda_recepcao.png`)
      - `02 — Gestão especializada gineco-obstétrica` (`22_medico_ficha_ginecologica.png`)
      - `03 — Monitoramento de prazos e retornos clínicos` (`20_medico_retornos.png`)
-     - `04 — Gestão operacional e parâmetros da clínica` (`14_app_configuracoes.png`)
+     - `04 — Visão geral da clínica e indicadores em tempo real` (`08_app_dashboard.png`)
    - **Seção 4 — Visão de Pessoas:** 3 perfis (`Gestão da clínica`, `Recepção e equipe administrativa`, `Profissionais de saúde`).
    - **Seção 5 — Compromisso Institucional:** 3 pilares (`Usabilidade`, `Privacidade`, `Segurança`).
    - **Seção 6 — Contato / Apresentação (`#contato`):** Formulário dedicado para agendar demonstração da Cana Med Mulher.

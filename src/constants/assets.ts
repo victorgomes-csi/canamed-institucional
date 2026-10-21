@@ -6,6 +6,7 @@ export const BRAND_ASSETS = {
 } as const;
 
 export const APP_SCREENSHOTS = {
+  appDashboard: '/assets/screenshots/08_app_dashboard.png',
   agendaRecepcao: '/assets/screenshots/09_app_agenda_recepcao.png',
   fichaGinecologica: '/assets/screenshots/22_medico_ficha_ginecologica.png',
   medicoRetornos: '/assets/screenshots/20_medico_retornos.png',

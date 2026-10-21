@@ -393,7 +393,7 @@ export function CanamedMulherPage(): JSX.Element {
               </div>
             </div>
 
-            {/* Módulo 04: Gestão Operacional e Configurações */}
+            {/* Módulo 04: Visão Geral da Clínica e Dashboard Operacional */}
             <div className="bg-surface-card rounded-2xl border border-border-subtle p-6 md:p-10 shadow-sm">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Screenshot Frame on Left */}
@@ -405,17 +405,17 @@ export function CanamedMulherPage(): JSX.Element {
                         <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
                         <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
                         <span className="text-caption font-caption text-text-muted ml-2">
-                          Configurações &amp; Parâmetros Institucionais
+                          Painel Operacional — Visão Geral do Dia
                         </span>
                       </div>
                       <span className="text-caption font-caption font-semibold text-[#008080]">
-                        14_app_configuracoes
+                        08_app_dashboard
                       </span>
                     </div>
                     <img
-                      alt="Painel de Configurações Operacionais da Clínica"
+                      alt="Dashboard Operacional com Indicadores em Tempo Real da Clínica"
                       className="w-full h-auto object-cover"
-                      src={APP_SCREENSHOTS.appConfiguracoes}
+                      src={APP_SCREENSHOTS.appDashboard}
                     />
                   </div>
                 </div>
@@ -426,20 +426,19 @@ export function CanamedMulherPage(): JSX.Element {
                     Módulo 04
                   </span>
                   <h3 className="text-headline-md font-headline-md text-graphite-text">
-                    04 — Gestão operacional e parâmetros da clínica
+                    04 — Visão geral da clínica e indicadores em tempo real
                   </h3>
                   <p className="text-body-lg font-body-lg text-on-surface-variant">
-                    Centralização de convênios atendidos, regras de atendimento e horários de funcionamento em um ambiente
-                    seguro.
+                    Acompanhamento centralizado de todo o fluxo do dia: pacientes agendadas, aguardando na recepção, em atendimento médico e consultas concluídas, com métricas operacionais claras para tomada de decisão imediata.
                   </p>
                   <div className="pt-2 space-y-2.5">
                     <div className="flex items-start gap-2.5 text-body-sm font-body-sm text-graphite-text">
-                      <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">tune</span>
-                      <span>Parametrização ágil de grades de médicos e intervalos de consulta</span>
+                      <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">monitoring</span>
+                      <span>Visualização instantânea de chegadas, tempo de espera e taxa de comparecimento, eliminando gargalos entre a recepção e os consultórios</span>
                     </div>
                     <div className="flex items-start gap-2.5 text-body-sm font-body-sm text-graphite-text">
-                      <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
-                      <span>Permissões individualizadas para recepção, equipe médica e gestores</span>
+                      <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">insights</span>
+                      <span>Indicadores consolidados para acompanhar pontualidade médica, ocupação de salas e liberação de atendimentos sem sobrecarregar a equipe</span>
                     </div>
                   </div>
                 </div>

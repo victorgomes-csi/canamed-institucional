@@ -19,14 +19,14 @@ describe('CanamedMulherPage ("/cana-med-mulher" - CA-004, CA-005, CA-007)', () =
     expect(screen.getByText('01 — Organize a agenda e recepção')).toBeInTheDocument();
     expect(screen.getByText('02 — Gestão especializada gineco-obstétrica')).toBeInTheDocument();
     expect(screen.getByText('03 — Monitoramento de prazos e retornos clínicos')).toBeInTheDocument();
-    expect(screen.getByText('04 — Gestão operacional e parâmetros da clínica')).toBeInTheDocument();
+    expect(screen.getByText('04 — Visão geral da clínica e indicadores em tempo real')).toBeInTheDocument();
 
     const imgs = screen.getAllByRole('img');
     const srcs = imgs.map((img) => img.getAttribute('src'));
     expect(srcs).toContain(APP_SCREENSHOTS.agendaRecepcao);
     expect(srcs).toContain(APP_SCREENSHOTS.fichaGinecologica);
     expect(srcs).toContain(APP_SCREENSHOTS.medicoRetornos);
-    expect(srcs).toContain(APP_SCREENSHOTS.appConfiguracoes);
+    expect(srcs).toContain(APP_SCREENSHOTS.appDashboard);
 
     expect(screen.getByText('Gestão da clínica')).toBeInTheDocument();
     expect(screen.getByText('Recepção e equipe administrativa')).toBeInTheDocument();
