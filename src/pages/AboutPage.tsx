@@ -86,7 +86,7 @@ export function AboutPage(): JSX.Element {
                 <div className="bg-surface-card p-6 rounded-xl border border-border-subtle shadow-sm mb-4 inline-block w-full max-w-sm">
                   <img
                     alt="Logotipo Oficial Cana Med Mulher"
-                    className="h-12 md:h-14 w-auto object-contain mx-auto"
+                    className="h-14 md:h-18 w-auto object-contain mx-auto"
                     src={BRAND_ASSETS.mulherLogoLonga}
                   />
                 </div>

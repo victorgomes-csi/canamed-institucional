@@ -1,5 +1,7 @@
 import { useState, type FormEvent, type JSX } from 'react';
 import { APP_SCREENSHOTS } from '../constants/assets';
+import { CONTACT_INFO } from '../constants/contact';
+import { InstagramIcon } from '../components/common/InstagramIcon';
 
 export function CanamedMulherPage(): JSX.Element {
   const [formData, setFormData] = useState({
@@ -631,11 +633,43 @@ export function CanamedMulherPage(): JSX.Element {
                 necessidades de clínicas ginecológicas e obstétricas.
               </p>
               <div className="space-y-4 pt-2">
+                <a
+                  href={CONTACT_INFO.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-body-md font-body-md text-graphite-text hover:text-primary transition-colors"
+                >
+                  <div className="w-8 h-8 rounded-full bg-[#E6FFFA] text-primary flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[18px]">call</span>
+                  </div>
+                  <div>
+                    <span className="text-caption font-caption text-text-muted block">Telefone / WhatsApp</span>
+                    <span className="font-semibold">{CONTACT_INFO.phoneFormatted}</span>
+                  </div>
+                </a>
+                <a
+                  href={CONTACT_INFO.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-body-md font-body-md text-graphite-text hover:text-primary transition-colors"
+                  aria-label="Instagram @canamedsolutions"
+                >
+                  <div className="w-8 h-8 rounded-full bg-pink-50 text-[#b8186c] flex items-center justify-center">
+                    <InstagramIcon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-caption font-caption text-text-muted block">Instagram Oficial</span>
+                    <span className="font-semibold">{CONTACT_INFO.instagramHandle}</span>
+                  </div>
+                </a>
                 <div className="flex items-center gap-3 text-body-md font-body-md text-graphite-text">
                   <div className="w-8 h-8 rounded-full bg-[#E6FFFA] text-primary flex items-center justify-center">
                     <span className="material-symbols-outlined text-[18px]">mail</span>
                   </div>
-                  <span>contato@canamed.com.br</span>
+                  <div>
+                    <span className="text-caption font-caption text-text-muted block">E-mail Institucional</span>
+                    <span>{CONTACT_INFO.email}</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3 text-body-md font-body-md text-graphite-text">
                   <div className="w-8 h-8 rounded-full bg-pink-50 text-[#b8186c] flex items-center justify-center">

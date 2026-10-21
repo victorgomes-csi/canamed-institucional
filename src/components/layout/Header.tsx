@@ -1,6 +1,8 @@
 import { useState, type JSX } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BRAND_ASSETS } from "../../constants/assets";
+import { CONTACT_INFO } from "../../constants/contact";
+import { InstagramIcon } from "../common/InstagramIcon";
 
 export function Header(): JSX.Element {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,8 +20,8 @@ export function Header(): JSX.Element {
 
   return (
     <header className="docked full-width top-0 sticky z-50 bg-surface/85 backdrop-blur-md border-b border-border-subtle shadow-sm transition-all duration-200">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20 w-full">
-        {/* Brand Logo Oficial */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20 md:h-24 w-full">
+        {/* Brand Logo Oficial - Tamanho Ampliado */}
         <Link
           to={isMulherPage ? "/cana-med-mulher" : "/"}
           className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-primary rounded-lg p-1 active:scale-[0.98] transition-transform duration-150"
@@ -27,7 +29,7 @@ export function Header(): JSX.Element {
           <img
             src={isMulherPage ? BRAND_ASSETS.mulherLogoLonga : BRAND_ASSETS.canamedLogoFull}
             alt={isMulherPage ? "Cana Med Mulher" : "Cana Med - Eficiência para quem mais precisa"}
-            className={isMulherPage ? "h-10 md:h-12 w-auto object-contain" : "h-10 md:h-11 w-auto object-contain"}
+            className={isMulherPage ? "h-12 md:h-16 w-auto object-contain" : "h-12 md:h-16 w-auto object-contain"}
           />
         </Link>
 
@@ -86,8 +88,33 @@ export function Header(): JSX.Element {
           </Link>
         </nav>
 
-        {/* Trailing Action & Mobile Menu Toggle */}
-        <div className="flex items-center gap-4">
+        {/* Trailing Action & Social */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          {/* Instagram Icon Link */}
+          <a
+            href={CONTACT_INFO.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram da Cana Med (@canamedsolutions)"
+            className="hidden sm:inline-flex items-center justify-center w-10 h-10 rounded-lg text-graphite-text hover:text-primary hover:bg-surface-subtle transition-all duration-150 active:scale-[0.95]"
+            title="Siga @canamedsolutions no Instagram"
+          >
+            <InstagramIcon className="w-5 h-5" />
+          </a>
+
+          {/* Telefone / WhatsApp Direto */}
+          <a
+            href={CONTACT_INFO.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Telefone e WhatsApp: ${CONTACT_INFO.phoneFormatted}`}
+            className="hidden lg:inline-flex items-center gap-1.5 text-label-sm font-label-sm text-graphite-text hover:text-primary px-2.5 py-1.5 rounded-lg hover:bg-surface-subtle transition-all"
+            title="Fale no WhatsApp"
+          >
+            <span className="material-symbols-outlined text-[18px] text-primary">call</span>
+            <span className="font-semibold">{CONTACT_INFO.phoneFormatted}</span>
+          </a>
+
           <Link
             to={contactLink}
             className="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary text-label-md font-label-md px-5 py-2.5 rounded-lg hover:bg-secondary transition-colors duration-150 active:scale-[0.98] shadow-sm"
@@ -177,7 +204,31 @@ export function Header(): JSX.Element {
             Contato
           </Link>
         </nav>
-        <div className="pt-4 border-t border-border-subtle">
+
+        {/* Mobile Contact & Social Details */}
+        <div className="pt-4 border-t border-border-subtle space-y-3">
+          <div className="flex flex-col gap-2.5 px-2 py-1 text-body-sm font-body-sm text-graphite-text">
+            <a
+              href={CONTACT_INFO.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
+            >
+              <span className="material-symbols-outlined text-primary text-[20px]">call</span>
+              <span className="font-semibold">{CONTACT_INFO.phoneFormatted}</span>
+            </a>
+            <a
+              href={CONTACT_INFO.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da Cana Med"
+              className="flex items-center gap-2 text-graphite-text hover:text-primary transition-colors"
+            >
+              <InstagramIcon className="w-5 h-5 text-primary" />
+              <span>@canamedsolutions</span>
+            </a>
+          </div>
+
           <Link
             to={contactLink}
             onClick={closeMenu}

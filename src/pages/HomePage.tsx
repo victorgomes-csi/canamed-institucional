@@ -1,6 +1,8 @@
 import { useState, type JSX } from 'react';
 import { Link } from 'react-router-dom';
 import { BRAND_ASSETS } from '../constants/assets';
+import { CONTACT_INFO } from '../constants/contact';
+import { InstagramIcon } from '../components/common/InstagramIcon';
 import { FrentesSection } from '../components/home/FrentesSection';
 
 export function HomePage(): JSX.Element {
@@ -104,7 +106,7 @@ export function HomePage(): JSX.Element {
                     <div className="flex items-center gap-3">
                       <img
                         alt="Monograma Cana Med"
-                        className="w-10 h-10 object-contain"
+                        className="w-12 h-12 md:w-14 md:h-14 object-contain"
                         src={BRAND_ASSETS.canamedMonogram}
                       />
                       <div>
@@ -260,7 +262,7 @@ export function HomePage(): JSX.Element {
               <div className="mb-2">
                 <img
                   alt="Cana Med Mulher"
-                  className="h-11 md:h-12 w-auto object-contain"
+                  className="h-14 md:h-16 w-auto object-contain"
                   src={BRAND_ASSETS.mulherLogoLonga}
                 />
               </div>
@@ -302,7 +304,7 @@ export function HomePage(): JSX.Element {
               <div className="text-center space-y-4">
                 <img
                   alt="Monograma Cana Med Mulher"
-                  className="h-28 w-auto mx-auto object-contain"
+                  className="h-32 md:h-36 w-auto mx-auto object-contain"
                   src={BRAND_ASSETS.mulherLogoCurta}
                 />
                 <div className="text-title-md font-title-md text-graphite-text">Cuidado &amp; Rigor Operacional</div>
@@ -332,12 +334,48 @@ export function HomePage(): JSX.Element {
                 Convide nossa equipe para entender os desafios práticos da sua operação e descubra como simplificar sua rotina de ponta a ponta.
               </p>
               <div className="space-y-3 pt-2 text-body-md font-body-md text-graphite-text">
+                <a
+                  href={CONTACT_INFO.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                >
+                  <div className="w-8 h-8 rounded-full bg-mint-subtle text-primary flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[18px]">call</span>
+                  </div>
+                  <div>
+                    <span className="text-caption font-caption text-text-muted block">Telefone / WhatsApp</span>
+                    <span className="font-semibold">{CONTACT_INFO.phoneFormatted}</span>
+                  </div>
+                </a>
+                <a
+                  href={CONTACT_INFO.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                  aria-label="Instagram @canamedsolutions"
+                >
+                  <div className="w-8 h-8 rounded-full bg-mint-subtle text-primary flex items-center justify-center">
+                    <InstagramIcon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-caption font-caption text-text-muted block">Instagram Oficial</span>
+                    <span className="font-semibold">{CONTACT_INFO.instagramHandle}</span>
+                  </div>
+                </a>
                 <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary">mail</span>
-                  <span>contato@canamed.com.br</span>
+                  <div className="w-8 h-8 rounded-full bg-mint-subtle text-primary flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[18px]">mail</span>
+                  </div>
+                  <div>
+                    <span className="text-caption font-caption text-text-muted block">E-mail Institucional</span>
+                    <span>{CONTACT_INFO.email}</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-secondary">location_on</span>
+                  <div className="w-8 h-8 rounded-full bg-surface-subtle text-secondary flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[18px]">location_on</span>
+                  </div>
                   <span>Atendimento Nacional para Clínicas e Serviços de Saúde</span>
                 </div>
               </div>
